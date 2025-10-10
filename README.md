@@ -24,19 +24,20 @@ AegisAI tackles this challenge by providing an integrated platform that protects
 ## 🚀 Live Demo / Screenshots
 
 Here's a look at the AegisAI dashboard in action.
+![AegisAI Dashboard](/Assets/main.png)
 
 #### **AI Model Security Simulation**
 
 The dashboard allows you to upload an image and see how the hardened model correctly identifies it, even after being subjected to an adversarial attack that fools a standard model.
 
-`[Placeholder for AI Model Security Screenshot]`
+![Simulation](/Assets/adversarial_attack.png)
+
 
 #### **Cloud & Identity Monitoring Feed**
 
 The simulation feed shows events as they happen, with the AI correctly distinguishing between normal (🟢) and anomalous (🔴) activities in real-time.
 
-`[Placeholder for Anomaly Detection Feed Screenshot]`
-
+![Monitoring](/Assets/anamoly_detection.png)
 -----
 
 ## 💻 Tech Stack
