@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: aegis-ai-backend
+    env: docker
+    dockerfilePath: ./src/api/Dockerfile
+    healthCheck:
+      path: /docs
+    
+  - type: web
+    name: aegis-ai-frontend
+    env: docker
+    dockerfilePath: ./src/dashboard/Dockerfile
+    envVars:
+      - key: API_URL
+        fromService:
+          type: web
+          name: aegis-ai-backend
+          property: url
