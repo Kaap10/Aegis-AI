@@ -4,7 +4,8 @@ services:
     env: docker
     dockerfilePath: ./src/api/Dockerfile
     healthCheck:
-      path: /docs
+      http:
+        path: /docs
     
   - type: web
     name: aegis-ai-frontend
